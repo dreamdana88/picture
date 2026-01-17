@@ -1,0 +1,171 @@
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+    .archive-outer{position:relative;margin:16px 0;padding:4px;max-width:100%;font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif}
+    .archive-container{position:relative;background:linear-gradient(135deg,#f5e6c8 0%,#e8d4a8 40%,#dcc692 70%,#f0e0b8 100%);border:1px solid #a08050;border-radius:2px;padding:18px 16px;box-shadow:inset 0 0 30px rgba(139,90,43,.15),2px 3px 8px rgba(0,0,0,.2);overflow:hidden}
+    .archive-container::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");pointer-events:none}
+    .archive-stain{position:absolute;border-radius:50%;pointer-events:none;z-index:1}
+    .archive-stain-1{width:80px;height:60px;top:10px;right:20px;background:radial-gradient(ellipse,rgba(139,90,43,.12) 0%,rgba(139,90,43,.05) 50%,transparent 70%);transform:rotate(-15deg)}
+    .archive-stain-2{width:50px;height:40px;bottom:30px;left:15px;background:radial-gradient(ellipse,rgba(101,67,33,.1) 0%,transparent 60%);transform:rotate(25deg)}
+    .archive-stain-3{width:35px;height:28px;top:50%;left:60%;background:radial-gradient(ellipse,rgba(120,80,40,.08) 0%,transparent 55%);transform:rotate(-8deg)}
+    .archive-blood{position:absolute;border-radius:50%;pointer-events:none;z-index:2}
+    .archive-blood-1{width:18px;height:12px;top:35px;right:45px;background:radial-gradient(ellipse at 40% 40%,rgba(120,30,30,.7) 0%,rgba(80,20,20,.5) 40%,rgba(60,15,15,.3) 70%,transparent 100%);transform:rotate(-25deg);box-shadow:1px 1px 2px rgba(60,15,15,.2)}
+    .archive-blood-2{width:8px;height:6px;top:48px;right:38px;background:radial-gradient(ellipse,rgba(100,25,25,.6) 0%,rgba(70,18,18,.3) 50%,transparent 80%);transform:rotate(20deg)}
+    .archive-blood-3{width:14px;height:10px;top:72px;right:25px;background:radial-gradient(ellipse at 30% 50%,rgba(90,22,22,.65) 0%,rgba(65,16,16,.4) 50%,transparent 85%);transform:rotate(-40deg)}
+    .archive-blood-4{width:22px;height:8px;bottom:45px;left:25px;background:radial-gradient(ellipse at 60% 40%,rgba(110,28,28,.55) 0%,rgba(75,20,20,.35) 45%,transparent 90%);transform:rotate(15deg) skewX(-10deg)}
+    .archive-blood-5{width:10px;height:7px;top:55%;left:12px;background:radial-gradient(ellipse,rgba(95,24,24,.5) 0%,rgba(60,15,15,.25) 60%,transparent 100%);transform:rotate(-30deg)}
+    .archive-splatter{position:absolute;pointer-events:none;z-index:2}
+    .archive-splatter-1{width:4px;height:4px;top:42px;right:60px;background:rgba(100,25,25,.6);border-radius:50%;box-shadow:3px 2px 0 1px rgba(90,22,22,.5),6px -1px 0 0 rgba(85,20,20,.4),-2px 3px 0 1px rgba(95,24,24,.45)}
+    .archive-splatter-2{width:3px;height:3px;top:80px;right:40px;background:rgba(88,22,22,.55);border-radius:50%;box-shadow:4px 1px 0 0 rgba(80,20,20,.4),-3px -2px 0 1px rgba(92,23,23,.35),2px 4px 0 0 rgba(75,18,18,.3)}
+    .archive-splatter-3{width:3px;height:3px;bottom:60px;left:45px;background:rgba(105,26,26,.5);border-radius:50%;box-shadow:-2px 3px 0 1px rgba(85,21,21,.4),4px 0 0 0 rgba(78,19,19,.35)}
+    .archive-drip{position:absolute;pointer-events:none;z-index:2}
+    .archive-drip-1{width:6px;height:25px;top:30px;right:15px;background:linear-gradient(180deg,rgba(115,29,29,.6) 0%,rgba(95,24,24,.5) 40%,rgba(75,19,19,.35) 70%,rgba(60,15,15,.15) 90%,transparent 100%);border-radius:3px 3px 50% 50%;transform:rotate(5deg)}
+    .archive-drip-1::after{content:'';position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);width:8px;height:8px;background:radial-gradient(ellipse,rgba(85,21,21,.5) 0%,rgba(65,16,16,.3) 50%,transparent 80%);border-radius:50%}
+    .archive-drip-2{width:4px;height:18px;top:25px;right:8px;background:linear-gradient(180deg,rgba(100,25,25,.5) 0%,rgba(80,20,20,.4) 50%,rgba(55,14,14,.2) 85%,transparent 100%);border-radius:2px 2px 50% 50%;transform:rotate(-8deg)}
+    .archive-smear{position:absolute;width:45px;height:12px;bottom:20px;right:55px;background:linear-gradient(90deg,transparent 0%,rgba(100,25,25,.25) 20%,rgba(85,21,21,.4) 50%,rgba(70,18,18,.3) 75%,rgba(55,14,14,.15) 90%,transparent 100%);border-radius:40%;transform:rotate(-12deg) skewX(-15deg);pointer-events:none;z-index:2}
+    .archive-smear::before{content:'';position:absolute;top:3px;left:8px;width:25px;height:6px;background:linear-gradient(90deg,transparent,rgba(90,23,23,.2) 30%,rgba(75,19,19,.15) 70%,transparent);border-radius:40%;transform:rotate(5deg)}
+    .archive-container::after{content:'';position:absolute;top:0;right:0;width:25px;height:100%;background:linear-gradient(180deg,transparent 0%,rgba(100,25,25,.08) 15%,rgba(85,21,21,.12) 30%,rgba(70,18,18,.06) 50%,transparent 65%,rgba(90,23,23,.1) 80%,rgba(75,19,19,.05) 95%,transparent 100%);pointer-events:none}
+    .archive-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;padding-bottom:10px;border-bottom:1px dashed rgba(100,70,40,.4)}
+    .archive-stamp{font-size:10px;color:#8b0000;border:1px solid #8b0000;padding:2px 6px;transform:rotate(-5deg);opacity:.7;letter-spacing:1px;font-weight:500}
+    .archive-title{font-size:17px;color:#3d2914;font-weight:700;letter-spacing:2px}
+    .archive-section{margin-bottom:12px}
+    .archive-section-title{font-size:13px;color:#5c4033;margin-bottom:10px;font-weight:700;border-left:3px solid #8b5a2b;padding-left:8px}
+    .archive-row{display:flex;align-items:flex-start;margin-bottom:6px;font-size:15px;line-height:1.6}
+    .archive-label{min-width:52px;color:#6b5344;font-weight:600;flex-shrink:0}
+    .archive-label::after{content:'：'}
+    .archive-value{color:#2d1f14;flex:1;word-break:break-word;font-weight:400}
+    .archive-highlight{background:rgba(139,90,43,.1);padding:5px 8px;margin:4px -8px;border-radius:2px}
+    .archive-day{font-weight:700;color:#8b0000}
+    .archive-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(100,70,40,.3) 20%,rgba(100,70,40,.3) 80%,transparent);margin:14px 0}
+    .archive-thought{background:rgba(60,40,20,.06);padding:8px 10px;margin:6px -10px;border-radius:2px;border-left:2px solid rgba(139,69,19,.4)}
+    .archive-thought-text{font-style:italic;color:#8b2a2a;font-size:14px;text-shadow:0 0 2px rgba(139,42,42,.25);letter-spacing:0.5px}
+    .archive-san-row{align-items:center}
+    .archive-san-bar{flex:1;height:18px;background:rgba(0,0,0,.1);border-radius:2px;position:relative;overflow:hidden;border:1px solid rgba(100,70,40,.3)}
+    .archive-san-fill{height:100%;background:linear-gradient(90deg,#8b0000,#b8860b);transition:width .3s ease;border-radius:1px}
+    .archive-san-num{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:12px;color:#3d2914;font-weight:600;text-shadow:0 0 2px rgba(255,255,255,.5)}
+    .archive-footer{margin-top:12px;padding-top:10px;border-top:1px dashed rgba(100,70,40,.3);text-align:right}
+    .archive-note{font-size:11px;color:#8b5a2b;opacity:.7}
+    .archive-inventory{margin-top:10px}
+    .archive-inventory-title{font-size:12px;color:#5c4033;margin-bottom:8px;font-weight:700;border-left:2px solid #8b5a2b;padding-left:6px}
+    .archive-item{display:flex;align-items:flex-start;margin-bottom:5px;font-size:14px;padding:5px 8px;background:rgba(139,90,43,.05);border-radius:2px}
+    .archive-item-name{min-width:70px;color:#4a3728;font-weight:600;flex-shrink:0}
+    .archive-item-qty{min-width:36px;color:#8b0000;font-weight:600;text-align:center}
+    .archive-item-desc{color:#6b5344;flex:1;font-size:13px}
+    @media(max-width:480px){.archive-container{padding:14px 12px}.archive-title{font-size:15px}.archive-row{font-size:14px}.archive-label{min-width:46px}.archive-item{flex-wrap:wrap}.archive-item-desc{width:100%;margin-top:3px}}
+  </style>
+  <script type="module">
+    function populateArchiveData() {
+      const all_variables = getAllVariables();
+
+      /* 世界变量 */
+      const date = _.get(all_variables, 'stat_data.世界.日期', 'N/A');
+      const time = _.get(all_variables, 'stat_data.世界.时间', 'N/A');
+      const location = _.get(all_variables, 'stat_data.世界.地点', 'N/A');
+      const season = _.get(all_variables, 'stat_data.世界.季节', 'N/A');
+      const dayCount = _.get(all_variables, 'stat_data.世界.末世天数', 0);
+
+      $('#archive-date').text(date);
+      $('#archive-time').text(time);
+      $('#archive-location').text(location);
+      $('#archive-season').text(season);
+      $('#archive-day').text('第' + dayCount + '天');
+
+      /* 沈瑾言变量 */
+      const relationship = _.get(all_variables, 'stat_data.沈瑾言.关系', 'N/A');
+      const clothing = _.get(all_variables, 'stat_data.沈瑾言.服装', 'N/A');
+      const posture = _.get(all_variables, 'stat_data.沈瑾言.姿势', 'N/A');
+      const innerVoice = _.get(all_variables, 'stat_data.沈瑾言.心声', '');
+      const sanValue = _.get(all_variables, 'stat_data.沈瑾言.SAN', 0);
+      const inventory = _.get(all_variables, 'stat_data.沈瑾言.物品栏', {});
+
+      $('#archive-relationship').text(relationship);
+      $('#archive-clothing').text(clothing);
+      $('#archive-posture').text(posture);
+      $('#archive-inner-voice').text('"' + innerVoice + '"');
+
+      /* SAN进度条 */
+      const sanPercent = Math.max(0, Math.min(100, sanValue));
+      $('#archive-san-fill').css('width', sanPercent + '%');
+      $('#archive-san-num').text(sanValue + '/100');
+
+      /* 物品栏渲染 */
+      const $inventoryContainer = $('#archive-inventory-list');
+      $inventoryContainer.empty();
+
+      if (_.isEmpty(inventory)) {
+        $inventoryContainer.append('<div class="archive-item"><span class="archive-item-name" style="color:#8b5a2b;font-style:italic;">无物资</span></div>');
+      } else {
+        _.forEach(inventory, function(itemData, itemName) {
+          const qty = _.get(itemData, '数量', 1);
+          const desc = _.get(itemData, '描述', '');
+          const $item = $('<div class="archive-item"></div>');
+          $item.append('<span class="archive-item-name">' + itemName + '</span>');
+          $item.append('<span class="archive-item-qty">×' + qty + '</span>');
+          $item.append('<span class="archive-item-desc">' + desc + '</span>');
+          $inventoryContainer.append($item);
+        });
+      }
+    }
+
+    async function init() {
+      await waitGlobalInitialized('Mvu');
+      populateArchiveData();
+    }
+
+    $(errorCatched(init));
+  </script>
+</head>
+<body>
+  <div class="archive-outer">
+    <div class="archive-stain archive-stain-1"></div>
+    <div class="archive-stain archive-stain-2"></div>
+    <div class="archive-stain archive-stain-3"></div>
+    <div class="archive-blood archive-blood-1"></div>
+    <div class="archive-blood archive-blood-2"></div>
+    <div class="archive-blood archive-blood-3"></div>
+    <div class="archive-blood archive-blood-4"></div>
+    <div class="archive-blood archive-blood-5"></div>
+    <div class="archive-splatter archive-splatter-1"></div>
+    <div class="archive-splatter archive-splatter-2"></div>
+    <div class="archive-splatter archive-splatter-3"></div>
+    <div class="archive-drip archive-drip-1"></div>
+    <div class="archive-drip archive-drip-2"></div>
+    <div class="archive-smear"></div>
+    <div class="archive-container">
+      <div class="archive-header">
+        <span class="archive-stamp">CLASSIFIED</span>
+        <span class="archive-title">末世生存档案</span>
+      </div>
+      <div class="archive-section archive-world">
+        <div class="archive-section-title">▸ 环境记录</div>
+        <div class="archive-row"><span class="archive-label">日期</span><span class="archive-value" id="archive-date">--</span></div>
+        <div class="archive-row"><span class="archive-label">时间</span><span class="archive-value" id="archive-time">--</span></div>
+        <div class="archive-row"><span class="archive-label">地点</span><span class="archive-value" id="archive-location">--</span></div>
+        <div class="archive-row"><span class="archive-label">季节</span><span class="archive-value" id="archive-season">--</span></div>
+        <div class="archive-row archive-highlight"><span class="archive-label">末世</span><span class="archive-value archive-day" id="archive-day">--</span></div>
+      </div>
+      <div class="archive-divider"></div>
+      <div class="archive-section archive-char">
+        <div class="archive-section-title">▸ 对象档案：沈瑾言</div>
+        <div class="archive-row"><span class="archive-label">关系</span><span class="archive-value" id="archive-relationship">--</span></div>
+        <div class="archive-row"><span class="archive-label">服装</span><span class="archive-value" id="archive-clothing">--</span></div>
+        <div class="archive-row"><span class="archive-label">姿势</span><span class="archive-value" id="archive-posture">--</span></div>
+        <div class="archive-row archive-thought"><span class="archive-label">心声</span><span class="archive-value archive-thought-text" id="archive-inner-voice">--</span></div>
+        <div class="archive-row archive-san-row">
+          <span class="archive-label">SAN</span>
+          <div class="archive-san-bar">
+            <div class="archive-san-fill" id="archive-san-fill" style="width:0%"></div>
+            <span class="archive-san-num" id="archive-san-num">--/100</span>
+          </div>
+        </div>
+        <div class="archive-inventory">
+          <div class="archive-inventory-title">▸ 持有物资</div>
+          <div id="archive-inventory-list"></div>
+        </div>
+      </div>
+      <div class="archive-footer">
+        <span class="archive-note">⚠ 本档案仅供内部参阅</span>
+      </div>
+    </div>
+  </div>
+</body>
