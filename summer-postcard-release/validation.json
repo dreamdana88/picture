@@ -1,0 +1,269 @@
+[
+  {
+    "width": 1440,
+    "before": {
+      "styles": {
+        "plugin": {
+          "background": "rgb(185, 233, 246)",
+          "radius": "0px",
+          "shadow": "rgb(71, 123, 145) 2px 2px 0px 0px",
+          "border": "2px"
+        },
+        "plugin-input": {
+          "background": "rgb(255, 249, 236)",
+          "radius": "0px",
+          "shadow": "none",
+          "border": "2px"
+        },
+        "extension": {
+          "background": "rgba(229, 247, 250, 0.92)",
+          "radius": "3px",
+          "shadow": "rgba(104, 163, 186, 0.33) 2px 2px 0px 0px",
+          "border": "1px"
+        },
+        "extension-native-class": {
+          "background": "rgba(229, 247, 250, 0.92)",
+          "radius": "3px",
+          "shadow": "rgba(104, 163, 186, 0.33) 2px 2px 0px 0px",
+          "border": "1px"
+        },
+        "frontend-button": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "native": {
+          "background": "rgb(185, 233, 246)",
+          "radius": "0px",
+          "shadow": "rgb(71, 123, 145) 2px 2px 0px 0px",
+          "border": "2px"
+        }
+      },
+      "frameWidth": 1328,
+      "margin": "8px 16px 16px",
+      "padding": "26px 28px 28px"
+    },
+    "after": {
+      "styles": {
+        "plugin": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "plugin-input": {
+          "background": "rgb(255, 255, 255)",
+          "radius": "8px",
+          "shadow": "none",
+          "border": "1px"
+        },
+        "extension": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "extension-native-class": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "frontend-button": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "native": {
+          "background": "rgb(185, 233, 246)",
+          "radius": "0px",
+          "shadow": "rgb(71, 123, 145) 2px 2px 0px 0px",
+          "border": "2px"
+        }
+      },
+      "frameWidth": 1380,
+      "margin": "8px 6px 12px",
+      "padding": "14px 12px 16px"
+    }
+  },
+  {
+    "width": 390,
+    "before": {
+      "styles": {
+        "plugin": {
+          "background": "rgb(185, 233, 246)",
+          "radius": "0px",
+          "shadow": "rgb(71, 123, 145) 2px 2px 0px 0px",
+          "border": "2px"
+        },
+        "plugin-input": {
+          "background": "rgb(255, 249, 236)",
+          "radius": "0px",
+          "shadow": "none",
+          "border": "2px"
+        },
+        "extension": {
+          "background": "rgba(229, 247, 250, 0.92)",
+          "radius": "3px",
+          "shadow": "rgba(104, 163, 186, 0.33) 2px 2px 0px 0px",
+          "border": "1px"
+        },
+        "extension-native-class": {
+          "background": "rgba(229, 247, 250, 0.92)",
+          "radius": "3px",
+          "shadow": "rgba(104, 163, 186, 0.33) 2px 2px 0px 0px",
+          "border": "1px"
+        },
+        "frontend-button": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "native": {
+          "background": "rgb(185, 233, 246)",
+          "radius": "0px",
+          "shadow": "rgb(71, 123, 145) 2px 2px 0px 0px",
+          "border": "2px"
+        }
+      },
+      "frameWidth": 326,
+      "margin": "6px 8px 10px",
+      "padding": "18px 16px 20px"
+    },
+    "after": {
+      "styles": {
+        "plugin": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "plugin-input": {
+          "background": "rgb(255, 255, 255)",
+          "radius": "8px",
+          "shadow": "none",
+          "border": "1px"
+        },
+        "extension": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "extension-native-class": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "frontend-button": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "native": {
+          "background": "rgb(185, 233, 246)",
+          "radius": "0px",
+          "shadow": "rgb(71, 123, 145) 2px 2px 0px 0px",
+          "border": "2px"
+        }
+      },
+      "frameWidth": 350,
+      "margin": "6px 4px 10px",
+      "padding": "12px 8px 14px"
+    }
+  },
+  {
+    "width": 430,
+    "before": {
+      "styles": {
+        "plugin": {
+          "background": "rgb(185, 233, 246)",
+          "radius": "0px",
+          "shadow": "rgb(71, 123, 145) 2px 2px 0px 0px",
+          "border": "2px"
+        },
+        "plugin-input": {
+          "background": "rgb(255, 249, 236)",
+          "radius": "0px",
+          "shadow": "none",
+          "border": "2px"
+        },
+        "extension": {
+          "background": "rgba(229, 247, 250, 0.92)",
+          "radius": "3px",
+          "shadow": "rgba(104, 163, 186, 0.33) 2px 2px 0px 0px",
+          "border": "1px"
+        },
+        "extension-native-class": {
+          "background": "rgba(229, 247, 250, 0.92)",
+          "radius": "3px",
+          "shadow": "rgba(104, 163, 186, 0.33) 2px 2px 0px 0px",
+          "border": "1px"
+        },
+        "frontend-button": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "native": {
+          "background": "rgb(185, 233, 246)",
+          "radius": "0px",
+          "shadow": "rgb(71, 123, 145) 2px 2px 0px 0px",
+          "border": "2px"
+        }
+      },
+      "frameWidth": 366,
+      "margin": "6px 8px 10px",
+      "padding": "18px 16px 20px"
+    },
+    "after": {
+      "styles": {
+        "plugin": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "plugin-input": {
+          "background": "rgb(255, 255, 255)",
+          "radius": "8px",
+          "shadow": "none",
+          "border": "1px"
+        },
+        "extension": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "extension-native-class": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "frontend-button": {
+          "background": "rgb(240, 220, 210)",
+          "radius": "12px",
+          "shadow": "none",
+          "border": "0px"
+        },
+        "native": {
+          "background": "rgb(185, 233, 246)",
+          "radius": "0px",
+          "shadow": "rgb(71, 123, 145) 2px 2px 0px 0px",
+          "border": "2px"
+        }
+      },
+      "frameWidth": 390,
+      "margin": "6px 4px 10px",
+      "padding": "12px 8px 14px"
+    }
+  }
+]
